@@ -1,11 +1,12 @@
 ### Navigation and components
+```
     -- Navigation Doc : https://reactnavigation.org/docs/en/getting-started.html 
     -- install following packages 
             .. npm install react-navigation
             .. expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context
             .. npm install react-navigation-stack
             .. npm install react-navigation-stack @react-native-community/masked-view 
-
+```
     [
         1. Create HomeStack.js file into routes 
         2. Change App.js file & include navigation
