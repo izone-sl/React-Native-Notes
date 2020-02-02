@@ -1,4 +1,4 @@
-**### administator cmd**
+**administator cmd**
     -- runas /user:Raza9798 cmd.exe
 ### create new project
     -- expo init ProjectName
