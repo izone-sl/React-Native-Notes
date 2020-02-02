@@ -1,0 +1,82 @@
+### administator cmd 
+    -- runas /user:Raza9798 cmd.exe
+### create new project
+    -- expo init ProjectName
+    -- choose expo-template-blank (a minimal app as clean as an empty canvas)
+    -- initial config value 
+        .. Enter App Name
+    -- cd ProjectFolder 
+    -- npm start
+
+    /* error occur when eject */
+        -- npm run eject (need administator access [if not npm eject will be failed])
+        -- choose react native bare or default 
+        -- enter xcode project name 
+        -- make a file "local.properties" inside the ProjectFolder-> Android -> local.properties
+                .. sdk.dir = C:\\Users\\Raza9798\\AppData\\Local\\Android\\Sdk
+     /* error occur when eject */
+    
+    -- create two folders to manage components and routes within project folder 
+        -> components
+        -> routes 
+
+ 
+
+### default Home.js Components structure (Change the class names according to needs)
+
+import React, { Component } from 'react';
+import { Text, View,StyleSheet,ScrollView,Alert } from 'react-native';  
+        const intiState = {
+            staffID: '', 
+            staffName: '',  
+            items:[], 
+        }
+        
+export default class Home extends Component {
+    constructor(props){
+        super(props); 
+        this.state =intiState; 
+    }
+    componentDidMount(){
+        
+    }
+    
+    onPressSubmit = () =>{
+         // code 
+    }
+    
+    render() {
+        return (
+                <View style={styles.container}>
+                    <Text>Home Screen Page</Text>
+                </View>
+             );
+            }
+        }
+        
+        
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+
+
+### Running a project 
+
+    M1 -- Open Android Emulator on Android Studio (need npm run eject to debug)
+            .. cmd administator 
+            .. cd C:\Users\Raza9798\AppData\Local\Android\Sdk\tools
+            .. emulator -list-avds
+            .. emulator -avd Nexus_5X_API_22
+            .. npm run android
+
+    M2 -- Open Android Emulator on Android Studio (debugging by default expo)
+            .. cmd administator 
+            .. cd C:\Users\Raza9798\AppData\Local\Android\Sdk\tools
+            .. emulator -list-avds
+            .. emulator -avd Nexus_5X_API_22
+            .. npm start
