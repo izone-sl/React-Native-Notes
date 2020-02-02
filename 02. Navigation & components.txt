@@ -1,23 +1,22 @@
 ### Navigation and components
-``` 
--- Navigation Doc : https://reactnavigation.org/docs/en/getting-started.html 
+    -- Navigation Doc : https://reactnavigation.org/docs/en/getting-started.html 
     -- install following packages 
             .. npm install react-navigation
             .. expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context
             .. npm install react-navigation-stack
             .. npm install react-navigation-stack @react-native-community/masked-view 
-```
->    [
->        1. Create HomeStack.js file into routes 
->        2. Change App.js file & include navigation
->        3. Make components and set routes / navigation
->    ] 
+
+    [
+        1. Create HomeStack.js file into routes 
+        2. Change App.js file & include navigation
+        3. Make components and set routes / navigation
+    ] 
 --------------------------------------------------------------------------------------
-                                Stack Navigation
+                             Stack Navigation
 --------------------------------------------------------------------------------------
 
 01.-------------------### HomeStack.js ###--------------------------------------------
-```
+
 import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
 
@@ -49,9 +48,8 @@ const HomeStack =createStackNavigator(screen,{
 
 export default createAppContainer(HomeStack);
 
-```
+
 02.-------------------### App.js ###--------------------------------------------
-```
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native'; 
 
@@ -73,9 +71,9 @@ const styles = StyleSheet.create({
   },
 });
 
-```
+
 03.-------------------### Navigating Home to Profile via Button ###--------------------------------------------
-```
+
 import React, { Component } from 'react';
 import { Text, View,StyleSheet,Button } from 'react-native';  
         const intiState = {
@@ -120,7 +118,7 @@ const styles = StyleSheet.create({
   },
 });
 
-```
+
 
 --------------------------------------------------------------------------------------
                              Drawer Navigation
